@@ -1,0 +1,27 @@
+.weatherCardHolder{
+    position:relative;
+    width:60%; 
+    height:20%; 
+    border-style:solid;
+    border-width: 1px;
+    border-color: rgb(0, 0, 0);
+    border-radius: 1em;
+    padding:10px
+}
+
+.topRow{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.temp{  
+    margin:0;    
+}
+.temp::after{
+    content: "°";
+}
+
+.weatherIcon{ 
+    height: 3em; 
+    filter: invert() brightness(60%);
+}
