@@ -1,10 +1,18 @@
-# Getting Started with Create React App
+# Weather App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+https://weather-app-umber-eta.vercel.app/
 
-## Available Scripts
+The basic Weather app, that im sure EVERYONE has made.
+currently only set to one city.
+## About it
 
-In the project directory, you can run:
+ Built with TypeScript
+
+ I'm using the api from VisualCrossing to grab 15 days worth of weather data.
+ 
+ That data is passed to Server2.0, which then builds that data into something more managable.
+ 
+ It's a lot easier to type small objects then someone elses mammoth of an object.
 
 ### `npm start`
 
@@ -28,19 +36,3 @@ The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
