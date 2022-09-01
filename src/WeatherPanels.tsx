@@ -5,10 +5,10 @@ import WeatherCard from './WeatherCard';
 import {useEffect, useState} from "react";
 import { dayModel } from './AppInterfaces';
 
-function WeatherPanels():JSX.Element {
+function WeatherPanels(props:{search:string}):JSX.Element {
 
   const [weather, setWeather] = useState<dayModel[]>() 
-  const weatherToQuery = 'New York';
+  const weatherToQuery = props.search;
   useEffect(()=>{
     fetch(`https://server2-0.vercel.app/weather/request?queryWeather=${weatherToQuery}`)
       .then(response => {
@@ -28,8 +28,8 @@ function WeatherPanels():JSX.Element {
     <div className="App">
       <header className="App-header">
         {weather?.map(element =>{
-          return(  
-          <WeatherCard iconurl={getIcon(element.icon)} date={element.datetime} temp={element.temp} description={element.description}/> 
+          return( 
+          <WeatherCard  iconurl={getIcon(element.icon)} date={element.datetime} temp={element.temp} description={element.description}/> 
           )
         })}
       </header>
