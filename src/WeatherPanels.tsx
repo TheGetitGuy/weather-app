@@ -29,7 +29,7 @@ function WeatherPanels(props:{search:string}):JSX.Element {
       <header className="App-header">
         {weather?.map(element =>{
           return( 
-          <WeatherCard  iconurl={getIcon(element.icon)} date={element.datetime} temp={element.temp} description={element.description}/> 
+          <WeatherCard  iconurl={getIcon(element.icon)} date={element.datetime} address={element.address} temp={element.temp} description={element.description}/> 
           )
         })}
       </header>

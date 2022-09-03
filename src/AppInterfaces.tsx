@@ -2,6 +2,7 @@ export interface dayModel{
     "datetime": string,
     "temp": number,
     "icon": string,
-    "description": string
+    "description": string,
+    "address": string
 }
  
