@@ -3,12 +3,14 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import SearchWeather from './SearchWeather';
 import reportWebVitals from './reportWebVitals';
+import PageHeader from './pageHeader';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
+    <PageHeader/>
     <SearchWeather />
   </React.StrictMode>
 );
