@@ -3,7 +3,7 @@
 https://weather-app-umber-eta.vercel.app/
 
 The basic Weather app, that im sure EVERYONE has made.
-currently only set to one city.
+Go ahead, enter any city or location, and a request will be sent to my server. My server takes and gets the data from an api, and formats it to be easier to work with, and sends it back to the website.
 ## About it
 
  Built with TypeScript
