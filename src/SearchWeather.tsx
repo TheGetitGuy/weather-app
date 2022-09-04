@@ -14,8 +14,10 @@ function SearchWeather():JSX.Element{
     }
 
     return <>
-    <input value={inputValue} type="text" onChange={inputValueHandler} placeholder="Enter a city"></input>
-    <button onClick={handleClick}>Search Weather</button>
+    <div className='inputHolder'>
+        <input value={inputValue} type="text" onChange={inputValueHandler} placeholder="Enter a city"></input>
+        <button onClick={handleClick}>Search <br/> Weather</button>
+    </div>
     <WeatherPanels search={searchValue}/>
     
     </>
